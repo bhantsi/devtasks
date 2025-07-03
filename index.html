@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- PWA Manifest -->
+  <link rel="manifest" href="/manifest.json" />
+
+  <!-- Meta tags for SEO and social sharing -->
+  <meta name="description"
+    content="A modern, feature-rich task management application with real-time sync and analytics" />
+  <meta name="keywords" content="tasks, productivity, todo, task manager, project management" />
+  <meta name="author" content="Task Manager Pro" />
+
+  <!-- Open Graph tags -->
+  <meta property="og:title" content="Task Manager Pro" />
+  <meta property="og:description" content="Organize your tasks efficiently with our modern task management app" />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="/icon-512.png" />
+
+  <!-- Twitter Card tags -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Task Manager Pro" />
+  <meta name="twitter:description" content="Organize your tasks efficiently with our modern task management app" />
+  <meta name="twitter:image" content="/icon-512.png" />
+
+  <!-- iOS PWA tags -->
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+  <meta name="apple-mobile-web-app-title" content="TaskManager" />
+  <link rel="apple-touch-icon" href="/icon-192.png" />
+
+  <!-- Theme color -->
+  <meta name="theme-color" content="#0ea5e9" />
+  <meta name="msapplication-TileColor" content="#0ea5e9" />
+
+  <title>Task Manager Pro - Organize Your Tasks</title>
+</head>
+
+<body>
+  <div id="root"></div>
+  <script type="module" src="/src/main.jsx"></script>
+
+  <!-- Service Worker Registration -->
+  <script>
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', () => {
+        navigator.serviceWorker.register('/sw.js')
+          .then((registration) => {
+            console.log('SW registered: ', registration);
+          })
+          .catch((registrationError) => {
+            console.log('SW registration failed: ', registrationError);
+          });
+      });
+    }
+  </script>
+</body>
+
+</html>
