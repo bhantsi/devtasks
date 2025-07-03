@@ -4,16 +4,24 @@
   "version": "1.0.0",
   "type": "module",
   "description": "A modern task management application built with React and Supabase featuring real-time sync, analytics, and PWA capabilities",
-  "keywords": ["react", "supabase", "task-manager", "productivity", "pwa", "real-time", "analytics"],
-  "author": "Your Name",
+  "keywords": [
+    "react",
+    "supabase",
+    "task-manager",
+    "productivity",
+    "pwa",
+    "real-time",
+    "analytics"
+  ],
+  "author": "Hamza Danjaji",
   "license": "MIT",
   "homepage": "https://github.com/your-username/devtasks",
   "repository": {
     "type": "git",
-    "url": "https://github.com/your-username/devtasks.git"
+    "url": "https://github.com/bhantsi/devtasks.git"
   },
   "bugs": {
-    "url": "https://github.com/your-username/devtasks/issues"
+    "url": "https://github.com/bhantsi/devtasks/issues"
   },
   "scripts": {
     "dev": "vite",
