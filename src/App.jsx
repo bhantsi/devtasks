@@ -24,24 +24,6 @@ function App() {
       setLoading(false);
     });
 
-    // Performance monitoring
-    if (typeof window !== 'undefined' && 'performance' in window) {
-      const observer = new PerformanceObserver((list) => {
-        for (const entry of list.getEntries()) {
-          if (entry.entryType === 'navigation') {
-            console.log('Page load time:', entry.loadEventEnd - entry.loadEventStart, 'ms');
-          }
-        }
-      });
-
-      try {
-        observer.observe({ entryTypes: ['navigation'] });
-      } catch (e) {
-        // PerformanceObserver not supported in this environment
-        console.log('PerformanceObserver not supported');
-      }
-    }
-
     return () => subscription.unsubscribe();
   }, []);
 
