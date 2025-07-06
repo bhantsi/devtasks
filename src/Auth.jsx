@@ -117,7 +117,7 @@ export default function Auth() {
             <div className="auth-card">
                 <div className="auth-header">
                     <div className="logo-container">
-                        <div className="logo">✓</div>
+                        <img src="/logo.png" alt="TaskFlow" className="logo" />
                         <h1>TaskFlow</h1>
                     </div>
                     <p className="auth-subtitle">
