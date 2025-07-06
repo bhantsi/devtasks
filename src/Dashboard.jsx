@@ -235,7 +235,7 @@ export default function Dashboard({ session }) {
                 <header className="dashboard-header">
                     <div className="header-top">
                         <div className="header-title">
-                            <img src="/logo.png" alt="TaskFlow" className="dashboard-logo" />
+                            <div className="dashboard-logo">✓</div>
                             <div className="dashboard-title">
                                 <h1>TaskFlow</h1>
                             </div>
